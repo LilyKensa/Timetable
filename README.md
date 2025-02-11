@@ -4,7 +4,7 @@
 
 ## Description
 
-Just a simple webpage to show the timetable
+Just a simple web page to show the timetable
 
 ## How to Use
 
