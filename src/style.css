@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --margin: 12px;
+  --border-radious: 12px;
+  font-family: "LXGW WenKai Mono TC", "Atkinson Hyperlegible Next", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #141414;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  --thin: 46px;
+  --fat: 60px;
+  position: relative;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 
+    120px 120px 120px 120px 120px;
+  grid-template-rows: 
+    var(--thin) 
+    var(--fat) 
+    var(--fat) 
+    var(--fat) 
+    var(--fat) 
+    var(--thin) 
+    var(--fat) 
+    var(--fat) 
+    var(--fat);
+}
+
+.container > * {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #aaaaaa;
+}
+
+.container > * {
+  border-radius: var(--border-radious);
+}
+
+.mysterious-wrapper {
+  position: relative;
+}
+.mysterious-wrapper > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mysterious {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radious);
+  border: 2px solid transparent; /* 2 */
+  background: linear-gradient(45deg,rgb(102, 219, 217),rgb(161, 80, 232)) border-box; /* 3 */
+  -webkit-mask: /* 4' */
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+          mask: /* 4 */
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /* 5' */
+          mask-composite: exclude; /* 5 */
+}
