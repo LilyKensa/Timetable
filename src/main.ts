@@ -37,6 +37,15 @@ class Lesson {
 
 const container = document.querySelector<HTMLDivElement>(".container")!;
 
+container.style.gridTemplateColumns = "120px ".repeat(data.routine.length).trim();
+container.style.gridTemplateRows = !data.routine.length
+  ? ""
+  : [...data.routine[0].list]
+    .reduce(
+      (p, _, i) => p + " " + (++i === data.lunchBreak ? "var(--thin) " : "") + "var(--fat)", 
+      "var(--thin)"
+    );
+
 function addToContainer({ title, pos, color }: Lesson) {
   let el = document.createElement("div");
 
@@ -75,7 +84,7 @@ function parseChunks(x: number, list: string) {
 
 addToContainer({
   title: "午休",
-  pos: new Pos(0, 5, 5, 1),
+  pos: new Pos(0, data.lunchBreak, data.routine.length, 1),
   color: data.uiColor
 });
 

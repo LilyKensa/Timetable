@@ -1,44 +1,35 @@
 export default {
   courses: [
     {
+      id: "P",
+      name: "體育"
+    }, {
+      id: "M",
+      name: "微積分"
+    }, {
       id: "E",
       name: "英文"
     }, {
-      id: "O",
-      name: "選修"
-    }, {
-      id: "M",
-      name: "數學"
-    }, {
       id: "C",
-      name: "化學"
+      name: "離散數學"
     }, {
-      id: "A",
-      name: "藝術"
-    }, {
-      id: "T",
-      name: "科技"
-    }, {
-      id: "S",
-      name: "國文"
-    }, {
-      id: "P",
-      name: "國防"
-    }, {
-      id: "H",
-      name: "健康"
-    }, {
-      id: "L",
-      name: "物理"
-    }, {
-      id: "B",
-      name: "體育"
-    }, {
-      id: "U",
-      name: "班會"
+      id: "G",
+      name: "圖論"
     }, {
       id: "R",
-      name: "地科"
+      name: "國文"
+    }, {
+      id: "U",
+      name: "計算機概論"
+    }, {
+      id: "O",
+      name: "企業概論"
+    }, {
+      id: "S",
+      name: "計算機實習"
+    }, {
+      id: "X",
+      name: ""
     }
   ],
   uiColor: "#cccccc",
@@ -47,38 +38,42 @@ export default {
       match: "E",
       color: "#ffff77",
     }, {
-      match: "OATBHEURP",
-      color: "#999999"
+      match: "P",
+      color: "#ff5566"
     }, {
-      match: "M",
+      match: "MGC",
       color: "#77ccff"
     }, {
-      match: "C",
+      match: "R",
       color: "#77ff77"
     }, {
-      match: "S",
+      match: "O",
       color: "#ff88ee"
     }, {
-      match: "L",
+      match: "US",
       color: "#aa88ff"
+    }, {
+      match: "X",
+      color: "#ffffff44"
     }
   ],
+  lunchBreak: 5,
   routine: [
     {
       title: "一",
-      list: "EBOOMCC"
+      list: "XXPPMMEEE"
     }, {
       title: "二",
-      list: "MMCCAAE"
+      list: "XXXXCCCXX"
     }, {
       title: "三",
-      list: "MMTTSSP"
+      list: "XXMMGGGXX"
     }, {
       title: "四",
-      list: "HHEELLB"
+      list: "XERRUUUXX"
     }, {
       title: "五",
-      list: "SSUULLR"
+      list: "XXOOXXSSX"
     }
   ]
 };
