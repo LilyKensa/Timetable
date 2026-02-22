@@ -35,6 +35,9 @@ class Lesson {
   }
 }
 
+document.documentElement.style.setProperty("--font-size", data.textSize + "px");
+document.documentElement.style.setProperty("--padding", data.padding + "px");
+
 const container = document.querySelector<HTMLDivElement>(".container")!;
 
 container.style.gridTemplateColumns = "120px ".repeat(data.routine.length).trim();
@@ -51,7 +54,7 @@ function addToContainer({ title, pos, color }: Lesson) {
 
   el.setAttribute("data-info", JSON.stringify({ title, pos, color }));
 
-  el.textContent = title;
+  el.innerHTML = title.split(/\n/g).join("<br />");
   el.style.gridArea = pos.getGridArea();
   el.style.borderColor = color;
 

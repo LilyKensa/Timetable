@@ -1,4 +1,6 @@
 export default {
+  textSize: 20,
+  padding: 5,
   courses: [
     {
       id: "P",
@@ -11,10 +13,13 @@ export default {
       name: "英文"
     }, {
       id: "C",
-      name: "離散數學"
+      name: "工程數學"
+    }, {
+      id: "J",
+      name: "數位系統\n導論"
     }, {
       id: "G",
-      name: "圖論"
+      name: "數位系統\n實驗"
     }, {
       id: "R",
       name: "國文"
@@ -22,13 +27,10 @@ export default {
       id: "U",
       name: "計算機概論"
     }, {
-      id: "O",
-      name: "企業概論"
-    }, {
       id: "S",
       name: "計算機實習"
     }, {
-      id: "X",
+      id: "-",
       name: ""
     }
   ],
@@ -41,19 +43,19 @@ export default {
       match: "P",
       color: "#ff5566"
     }, {
-      match: "MGC",
+      match: "MC",
       color: "#77ccff"
     }, {
       match: "R",
       color: "#77ff77"
     }, {
-      match: "O",
+      match: "GJ",
       color: "#ff88ee"
     }, {
       match: "US",
       color: "#aa88ff"
     }, {
-      match: "X",
+      match: "-",
       color: "#ffffff44"
     }
   ],
@@ -61,19 +63,19 @@ export default {
   routine: [
     {
       title: "一",
-      list: "XXPPMMEEE"
+      list: "--PPMMEEE"
     }, {
       title: "二",
-      list: "XXXXCCCXX"
+      list: "-R--CCC--"
     }, {
       title: "三",
-      list: "XXMMGGGXX"
+      list: "-JMMGGG--"
     }, {
       title: "四",
-      list: "XERRUUUXX"
+      list: "-ERRUUU--"
     }, {
       title: "五",
-      list: "XXOOXXSSX"
+      list: "--JJ--SS-"
     }
   ]
 };
