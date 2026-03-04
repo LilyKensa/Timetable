@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .container {
@@ -41,10 +42,13 @@ body {
   justify-content: center;
   text-align: center;
   border: 2px solid #aaaaaa;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: scale 200ms;
 }
 
-.container > * {
-  border-radius: var(--border-radius);
+.container > :active {
+  scale: 0.95;
 }
 
 .mysterious-wrapper {

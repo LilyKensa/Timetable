@@ -69,7 +69,7 @@ export default {
       list: "-R--CCC--"
     }, {
       title: "三",
-      list: "-JMMGGG--"
+      list: "-JMM--GGG"
     }, {
       title: "四",
       list: "-ERRUUU--"
